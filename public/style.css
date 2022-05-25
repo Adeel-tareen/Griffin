@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo {
+    margin:15px 30px;
+}
+
+#locationInput {
+    height: 56px;
+    width: 461px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #4BC803;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#searchBtn {
+    width: 72px;
+    height: 36px;
+    border-radius: 4px;
+    padding: 10px, 20px, 10px, 20px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #4BC803;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    background-color: #4BC803;
+    color: white;
+
+}
+
+#searchBtn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.showData {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.showData > div {
+    width: 435px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #e0ffb4;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.cards p {
+    margin: 0px;
+    display: inline-block;
+    text-align: center
+}
+
+.leftData img {
+    width: 200px;
+    height: 200px;
+}
+
+.location {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.location p {
+    margin: 0px;
+}
+
+.bottomData {
+    display: flex;
+    font-size: 18px;
+}
+
+.bottomData img {
+    margin-right: 8px;
+}
+
+.rightData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bottomData>div {
+    flex-basis: 50%;
+}
+
+.rating {
+    display: flex;
+}
+
+.checked {
+    color: grey
+}
+
+span {
+    color: grey;
+}
+
+.address {
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 460px) {
+    #locationInput {
+        width: 100%;
+    }
+
+    .cards {
+        width: 332px;
+    }
+}
